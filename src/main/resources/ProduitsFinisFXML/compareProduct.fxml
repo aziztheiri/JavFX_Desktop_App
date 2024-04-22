@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="605.0" prefWidth="1076.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.ProduitsFinis.CompareProductController">
+    <children>
+        <Label layoutX="393.0" layoutY="12.0" prefHeight="59.0" prefWidth="333.0" styleClass="welcome" stylesheets="@../style/application.css" text="Comparaison du produit" />
+      <Pane layoutX="738.0" layoutY="118.0" prefHeight="384.0" prefWidth="324.0" styleClass="pane-comparison" stylesheets="@../style/dashboard.css">
+         <children>
+            <Label layoutX="17.0" layoutY="24.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Libelle : " />
+            <Label layoutX="17.0" layoutY="94.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Description : " />
+            <Label layoutX="16.0" layoutY="172.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Catégorie : " />
+            <Label layoutX="16.0" layoutY="242.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="TotalRate : " />
+            <Label layoutX="17.0" layoutY="309.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Artiste : " />
+            <Label fx:id="showlibelle11" layoutX="155.0" layoutY="37.0" prefHeight="37.0" prefWidth="126.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <Label fx:id="showcat11" layoutX="155.0" layoutY="323.0" prefHeight="37.0" prefWidth="140.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <Label fx:id="showrate11" layoutX="156.0" layoutY="256.0" prefHeight="37.0" prefWidth="126.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <Label fx:id="showart11" layoutX="157.0" layoutY="184.0" prefHeight="37.0" prefWidth="126.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <TextArea fx:id="showdescr11" editable="false" layoutX="152.0" layoutY="88.0" prefHeight="79.0" prefWidth="122.0" stylesheets="@../style/product.css" />
+         </children>
+      </Pane>
+      <Pane layoutX="47.0" layoutY="116.0" prefHeight="388.0" prefWidth="324.0" styleClass="pane-comparison" stylesheets="@../style/dashboard.css">
+         <children>
+            <Label layoutX="14.0" layoutY="24.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Libelle : " />
+            <Label layoutX="14.0" layoutY="94.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Description : " />
+            <Label layoutX="13.0" layoutY="172.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Catégorie : " />
+            <Label layoutX="13.0" layoutY="242.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="TotalRate : " />
+            <Label layoutX="14.0" layoutY="309.0" styleClass="product-details" stylesheets="@../style/ShowDetails.css" text="Artiste : " />
+            <Label fx:id="showlibelle1" layoutX="153.0" layoutY="40.0" prefHeight="37.0" prefWidth="126.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <Label fx:id="showcat1" layoutX="152.0" layoutY="323.0" prefHeight="37.0" prefWidth="140.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <Label fx:id="showrate1" layoutX="153.0" layoutY="256.0" prefHeight="37.0" prefWidth="126.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <Label fx:id="showart1" layoutX="154.0" layoutY="184.0" prefHeight="37.0" prefWidth="126.0" styleClass="product-details-Label" stylesheets="@../style/ShowDetails.css" text="Label" />
+            <TextArea fx:id="showdescr1" editable="false" layoutX="149.0" layoutY="88.0" prefHeight="79.0" prefWidth="122.0" stylesheets="@../style/product.css" />
+         </children>
+      </Pane>
+      <Pane layoutX="395.0" layoutY="74.0" prefHeight="512.0" prefWidth="324.0" styleClass="pane-comparison" stylesheets="@../style/dashboard.css">
+         <children>
+            <Label fx:id="comparisonCat" layoutX="6.0" layoutY="91.0" prefHeight="59.0" prefWidth="312.0" styleClass="product-comparison" stylesheets="@../style/ShowDetails.css" text="xxxxxxxxxxxxxxxxx" wrapText="true" />
+            <Label fx:id="comparisonRate" layoutX="6.0" layoutY="158.0" prefHeight="59.0" prefWidth="312.0" styleClass="product-comparison" stylesheets="@../style/ShowDetails.css" text="xxxxxxxxxxxxxxxxx" wrapText="true" />
+            <Label fx:id="comparisonArtiste" layoutX="6.0" layoutY="228.0" prefHeight="59.0" prefWidth="312.0" styleClass="product-comparison" stylesheets="@../style/ShowDetails.css" text="xxxxxxxxxxxxxx" wrapText="true" />
+            <Label fx:id="firstdesccomp" layoutX="7.0" layoutY="293.0" prefHeight="59.0" prefWidth="312.0" styleClass="product-comparison" stylesheets="@../style/ShowDetails.css" text="xxxxxxxxxxxxxx" wrapText="true" />
+            <Label fx:id="seconddescrcomp" layoutX="6.0" layoutY="364.0" prefHeight="59.0" prefWidth="312.0" styleClass="product-comparison" stylesheets="@../style/ShowDetails.css" text="xxxxxxxxxxxxx" wrapText="true" />
+            <ImageView fx:id="imagev1" fitHeight="59.0" fitWidth="72.0" layoutX="26.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imagev11" fitHeight="59.0" fitWidth="72.0" layoutX="195.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="139.0" layoutY="34.0" text="vs" textFill="RED">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="descrrrr" layoutX="6.0" layoutY="436.0" prefHeight="59.0" prefWidth="312.0" styleClass="product-comparison" stylesheets="@../style/ShowDetails.css" text="xxxxxxxxxxxxxxxxxx" wrapText="true" />
+         </children>
+      </Pane>
+      <Label layoutX="815.0" layoutY="53.0" prefHeight="59.0" prefWidth="196.0" styleClass="compare-produit" stylesheets="@../style/application.css" text="Deuxième Produit" />
+      <Label layoutX="105.0" layoutY="52.0" prefHeight="59.0" prefWidth="180.0" styleClass="compare-produit" stylesheets="@../style/application.css" text="Premier Produit" />
+    </children>
+</AnchorPane>

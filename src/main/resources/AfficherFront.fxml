@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.AfficherFront">
+    <top>
+        <HBox prefHeight="44.0" prefWidth="775.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="50.0" prefWidth="198.0" text="Our Events" textFill="RED">
+                    <font>
+                        <Font name="Edwardian Script ITC" size="35.0" />
+                    </font>
+                </Label>
+                <Separator orientation="VERTICAL" prefHeight="200.0" />
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="text" prefHeight="49.0" prefWidth="158.0" promptText="Research" />
+                    </children>
+                </HBox>
+            <Label alignment="CENTER" prefHeight="51.0" prefWidth="357.0" text="Welcome Back " textFill="#c90000">
+               <font>
+                  <Font name="Edwardian Script ITC" size="35.0" />
+               </font>
+            </Label>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="617.0" prefWidth="176.0" styleClass="white-background" stylesheets="@values/style.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="134.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/426836758_7144857225621536_8049451163237829221_n.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="11.0" />
+                            </VBox.margin>
+                        </ImageView>
+                    </children>
+                </VBox>
+                <HBox prefHeight="46.0" prefWidth="193.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="69.0" prefWidth="191.0" text="Check social media platforms" textAlignment="CENTER" textFill="#bf1313">
+                     <font>
+                        <Font name="Bookman Old Style" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+                </HBox>
+                <HBox prefHeight="48.0" prefWidth="193.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/facebookLogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="37.0" prefWidth="106.0" text="Arteco_Officiel" textAlignment="CENTER" textFill="#1e0202">
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="193.0">
+               <children>
+                  <ImageView fitHeight="53.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/instalogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="62.0" prefWidth="106.0" text="Arteco_Officiel">
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+                </HBox>
+                <HBox prefHeight="49.0" prefWidth="193.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/gmail.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="48.0" prefWidth="162.0" text="Arteco@gmail.com&#10;&#10;">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+                </HBox>
+                <HBox prefHeight="72.0" prefWidth="193.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="196.0" />
+               </children>
+                </HBox>
+                <HBox prefHeight="57.0" prefWidth="193.0">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="125.0" text="Reserver ">
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                        <Button fx:id="btn1" alignment="CENTER" mnemonicParsing="false" onAction="#add" prefHeight="59.0" prefWidth="71.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="ADD" textFill="#fcfcfc" />
+               </children>
+                </HBox>
+                <HBox prefHeight="66.0" prefWidth="200.0" />
+                <HBox prefHeight="36.0" prefWidth="193.0">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Icons/Move Up.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="38.0" prefWidth="150.0" text="Deconnecter">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Berlin Sans FB" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <VBox>
+                    <ScrollPane prefHeight="540.0" prefWidth="582.0" BorderPane.alignment="CENTER">
+                        <BorderPane.margin>
+                            <Insets bottom="200.0" />
+                        </BorderPane.margin>
+                        <content>
+                            <HBox fx:id="cartev" prefHeight="505.0" prefWidth="582.0" />
+                        </content>
+                    </ScrollPane>
+                    <HBox alignment="CENTER" spacing="10" />
+
+                </VBox>
+
+            </center>
+
+        </BorderPane>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,101 @@
+.text-field,text-area {
+    -fx-line-height: 28px;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent transparent #777 transparent;
+    -fx-padding: 0.2em 0;
+    -fx-outline: none;
+    -fx-background-color: transparent;
+    -fx-text-fill: #0d0c22;
+    -fx-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.text-field:focused, .input:hover {
+    -fx-outline: none;
+    -fx-padding: 0.2em 1em;
+    -fx-border-radius: 1em;
+    -fx-border-color: #7a9cc6;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+
+.buttonAjouter {
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 7px;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(61, 106, 255);
+    -fx-font-size: 14px;
+    -fx-text-fill: rgb(61, 106, 255);
+    -fx-text-transform: uppercase;
+    -fx-font-weight: 600;
+    -fx-letter-spacing: 2px;
+    -fx-background-color: transparent;
+    -fx-overflow: hidden;
+    -fx-effect: null;
+    -fx-transition: all 0.2s ease-in;
+}
+
+.buttonAjouter:hover {
+    -fx-background-color: rgb(61, 106, 255);
+    -fx-effect: dropshadow(gaussian, rgba(0, 142, 236, 0.815), 30, 0, 0, 5);
+    -fx-transition: all 0.2s ease-out;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 4px;
+
+}
+
+.buttonAjouter:hover {
+    -fx-animation: sh02 0.5s 0s linear;
+}
+
+.buttonAjouter .before {
+    -fx-content: '';
+    -fx-display: block;
+    -fx-width: 0px;
+    -fx-height: 86%;
+    -fx-position: absolute;
+    -fx-top: 7%;
+    -fx-left: 0%;
+    -fx-opacity: 0;
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(gaussian, #fff, 50, 30, 0, 0);
+    -fx-rotate: -20deg}
+
+@keyframes sh02 {
+    0% {
+        -fx-opacity: 0;
+        -fx-left: 0%;
+    }
+
+    50% {
+        -fx-opacity: 1;
+    }
+
+    100% {
+        -fx-opacity: 0;
+        -fx-left: 100%;
+    }
+}
+
+.buttonAjouter:pressed {
+    -fx-effect: null;
+    -fx-transition: box-shadow 0.2s ease-in;
+}
+
+
+.uploadImage {
+    -fx-display: inline-block;
+    -fx-outline: none;
+    -fx-border: none;
+    -fx-height: 45px;
+    -fx-line-height: 45px;
+    -fx-border-radius: 15px;
+    -fx-background-color: white;
+    -fx-text-fill: #696969;
+    -fx-transition: -fx-background 0.2s ease, -fx-text-fill 0.2s ease, -fx-effect 0.2s ease;
+}
+
+.uploadImage:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+

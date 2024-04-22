@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="225.0" minWidth="135.0" prefHeight="225.0" prefWidth="169.0" style="-fx-background-radius: 25; -fx-background-color: #feffef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionCour.CourController">
+   <children>
+      <ImageView fitHeight="129.0" fitWidth="132.0" layoutX="18.0" layoutY="-16.0">
+         <image>
+            <Image url="@../gestionCourImages/Quizlogo-preview.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="25.0" layoutY="102.0" prefHeight="34.0" prefWidth="116.0">
+         <children>
+            <Label fx:id="LabelTitreQuiz" layoutX="34.0" layoutY="7.0" text="TitreQuiz" textAlignment="CENTER" textFill="#ff9629">
+               <font>
+                  <Font name="Inter Medium" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="8.0" layoutY="128.0" prefHeight="40.0" prefWidth="134.0">
+         <children>
+            <Label fx:id="LabelPoints" layoutX="39.0" layoutY="11.0" text="Points" textFill="#0380b5">
+               <font>
+                  <Font name="Inter Medium" size="17.0" />
+               </font>
+            </Label>
+            <Text fx:id="points" fill="#3290b2" layoutX="92.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="56.0" layoutY="175.0" mnemonicParsing="false" onAction="#startButtonClicked" prefHeight="25.0" prefWidth="55.0" style="-fx-background-radius: 5; -fx-background-color: #3290b2;" text="Start" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="QuizId" layoutX="3.0" layoutY="84.0" opacity="0.0" text="Label" />
+   </children>
+   <effect>
+      <DropShadow height="5.0" radius="2.0" width="5.0" />
+   </effect>
+</Pane>

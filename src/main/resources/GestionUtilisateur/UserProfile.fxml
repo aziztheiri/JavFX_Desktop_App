@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="parentNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionUtilisateur.UserProfileController">
+    <left>
+        <BorderPane fx:id="sideBar" prefHeight="522.0" prefWidth="182.0" style="-fx-background-color: F3F2F7;" BorderPane.alignment="CENTER">
+            <top>
+                <VBox alignment="CENTER" prefHeight="156.0" prefWidth="182.0" style="-fx-border-width: 0 0 0.5 0; -fx-border-color: black;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fx:id="userProfile" fitHeight="103.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="username" alignment="CENTER" prefHeight="22.0" prefWidth="187.0" text="Username">
+                            <font>
+                                <Font name="Inter Medium" size="12.0" />
+                            </font>
+                        </Label>
+                  <HBox alignment="CENTER" prefHeight="18.0" prefWidth="172.0">
+                     <children>
+                        <Label fx:id="points" />
+                        <ImageView fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/pngtree-gold-golden-coin-coin-reward-png-image_3972693-removebg-preview%201.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                    </children>
+                </VBox>
+            </top>
+            <center>
+                <VBox fx:id="routingWrapper" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="dashboard" alignment="CENTER" onMouseClicked="#routeToDashboard" prefHeight="8.0" prefWidth="182.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/house.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="15.0" prefWidth="100.0" style="-fx-text-fill: #1f384f;" text="Dashboard">
+                           <font>
+                              <Font name="Inter Medium" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children></VBox>
+            </center>
+            <bottom>
+                <HBox fx:id="disconnect" alignment="CENTER" onMouseClicked="#disconnect" prefHeight="46.0" prefWidth="182.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="13.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/Move%20Up.png" />
+                            </image>
+                        </ImageView>
+                        <Label onMouseClicked="#disconnect" prefHeight="18.0" prefWidth="78.0" text="Déconnecter">
+                            <font>
+                                <Font name="Inter Medium" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox alignment="CENTER" prefHeight="101.0" prefWidth="664.0" spacing="20.0" style="-fx-background-color: F3F2F7;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="home" fitHeight="78.0" fitWidth="86.0" onMouseClicked="#routeToHome" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/426836758_7144857225621536_8049451163237829221_n.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="8.0" prefWidth="182.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/gear.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="15.0" prefWidth="100.0" style="-fx-text-fill: #1f384f;" text="Account Settings">
+                           <font>
+                              <Font name="Inter Medium" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <ScrollPane fx:id="content" prefHeight="498.0" prefWidth="722.0" style="-fx-border-width: 0 0 0 0; -fx-background-color: transparent;" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="wrapper" prefHeight="800.0" prefWidth="662.0" spacing="15.0">
+                     <children>
+                        <VBox fx:id="resetUsernameWrapper" maxHeight="150.0" minHeight="0.0" prefHeight="146.0" prefWidth="642.0" spacing="10.0" style="-fx-background-color: #0f172a; -fx-background-radius: 20;">
+                           <children>
+                              <Label fx:id="toggleB" onMouseClicked="#showUsernameReset" prefHeight="26.0" prefWidth="398.0" style="-fx-text-fill: F3F2F7;" text="Reset Username">
+                                 <font>
+                                    <Font name="Inter Medium" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <VBox fx:id="userWrapper" prefHeight="85.0" spacing="5.0">
+                                 <children>
+                                    <Label fx:id="resetErrorL" prefHeight="18.0" prefWidth="438.0" style="-fx-text-fill: DC143C;" text="Sorry, you cannot reset your username at this time.Please wait">
+                                       <font>
+                                          <Font name="Inter Medium" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox fx:id="fieldWrapper" prefHeight="500.0" spacing="5.0">
+                                       <children>
+                                          <TextField fx:id="resetField" maxWidth="250.0" minWidth="200.0" prefHeight="26.0" prefWidth="220.0" promptText="Username" style="-fx-border-color: F3F2F7;" styleClass="textfields" stylesheets="@../style/userCard.css" />
+                                          <Button mnemonicParsing="false" onAction="#resetUsername" prefHeight="32.0" prefWidth="71.0" style="-fx-background-radius: 10; -fx-background-color: F3F2F7; -fx-text-fill: #0f172a;" text="Reset">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <font>
+                                                <Font name="Inter Medium" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox fx:id="resetPasswordWrapper" maxHeight="177.0" minHeight="0.0" prefHeight="0.0" prefWidth="642.0" spacing="10.0" style="-fx-background-color: #0f172a; -fx-background-radius: 20;">
+                           <children>
+                              <Label fx:id="togglePass" onMouseClicked="#showPasswordReset" prefHeight="26.0" prefWidth="398.0" style="-fx-text-fill: F3F2F7;" text="Reset Password">
+                                 <font>
+                                    <Font name="Inter Medium" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <VBox fx:id="userWrapper1" prefHeight="144.0" prefWidth="621.0" spacing="5.0">
+                                 <children>
+                                    <Label fx:id="resetErrorL1" prefHeight="18.0" prefWidth="438.0" style="-fx-text-fill: DC143C;" text="Sorry, you cannot reset your password at this time.Please wait">
+                                       <font>
+                                          <Font name="Inter Medium" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox fx:id="fieldWrapper1" prefHeight="500.0" spacing="8.0">
+                                       <children>
+                                          <PasswordField fx:id="passwordTF" maxWidth="300.0" promptText="Password" style="-fx-border-color: F3F2F7;" styleClass="textfields" stylesheets="@../style/userCard.css">
+                                             <font>
+                                                <Font name="Inter Medium" size="12.0" />
+                                             </font>
+                                          </PasswordField>
+                                          <PasswordField fx:id="confirmPasswordTF" maxWidth="300.0" promptText="Confirm Password" style="-fx-border-color: F3F2F7;" styleClass="textfields" stylesheets="@../style/userCard.css">
+                                             <font>
+                                                <Font name="Inter Medium" size="12.0" />
+                                             </font>
+                                          </PasswordField>
+                                          <Button mnemonicParsing="false" onAction="#resetPassword" prefHeight="32.0" prefWidth="71.0" style="-fx-background-radius: 10; -fx-background-color: F3F2F7; -fx-text-fill: #0f172a;" text="Reset">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <font>
+                                                <Font name="Inter Medium" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fx:id="update" maxHeight="224.0" minHeight="0.0" prefHeight="14.0" prefWidth="642.0" spacing="10.0" style="-fx-background-color: #0f172a; -fx-background-radius: 20;">
+                           <children>
+                              <Label fx:id="toggleInfo" onMouseClicked="#showUpdate" prefHeight="26.0" prefWidth="398.0" style="-fx-text-fill: F3F2F7;" text="Update personnal information">
+                                 <font>
+                                    <Font name="Inter Medium" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <VBox fx:id="updateWrapper" prefHeight="159.0" prefWidth="621.0" spacing="5.0">
+                                 <children>
+                                    <Label fx:id="updateError" prefHeight="18.0" prefWidth="438.0" style="-fx-text-fill: DC143C;">
+                                       <font>
+                                          <Font name="Inter Medium" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox fx:id="fieldWrapper11" prefHeight="132.0" prefWidth="621.0" spacing="8.0">
+                                       <children>
+                                          <HBox maxWidth="400.0" prefHeight="32.0" prefWidth="357.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="nameField" prefHeight="26.0" prefWidth="145.0" promptText="Nom" style="-fx-border-color: F3F2F7;" styleClass="textfields" stylesheets="@../style/userCard.css" />
+                                                <TextField fx:id="lastnameField" prefHeight="26.0" prefWidth="145.0" promptText="Prenom" style="-fx-border-color: F3F2F7;" styleClass="textfields" stylesheets="@../style/userCard.css" />
+                                             </children>
+                                          </HBox>
+                                          <TextField fx:id="emailField" maxWidth="300.0" prefHeight="26.0" prefWidth="300.0" promptText="Email" style="-fx-border-color: F3F2F7;" styleClass="textfields" stylesheets="@../style/userCard.css" />
+                                          <Button mnemonicParsing="false" onAction="#update" prefHeight="32.0" prefWidth="71.0" style="-fx-background-radius: 10; -fx-background-color: F3F2F7; -fx-text-fill: #0f172a;" text="Update">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <font>
+                                                <Font name="Inter Medium" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fx:id="artist" maxHeight="224.0" minHeight="0.0" prefHeight="45.0" prefWidth="642.0" spacing="10.0" style="-fx-background-color: #0f172a; -fx-background-radius: 20;">
+                           <children>
+                              <Label fx:id="artistL" onMouseClicked="#sendArtistRequest" prefHeight="26.0" prefWidth="556.0" style="-fx-text-fill: F3F2F7;" text="Become an artist?">
+                                 <font>
+                                    <Font name="Inter Medium" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fx:id="userProfileChange" maxHeight="224.0" minHeight="0.0" prefHeight="45.0" prefWidth="642.0" spacing="10.0" style="-fx-background-color: #0f172a; -fx-background-radius: 20;">
+                           <children>
+                              <Label fx:id="picL" onMouseClicked="#fileButtonAction" prefHeight="26.0" prefWidth="556.0" style="-fx-text-fill: F3F2F7;" text="Change Profile picture?">
+                                 <font>
+                                    <Font name="Inter Medium" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fx:id="activationWrapper" maxHeight="150.0" minHeight="0.0" prefHeight="106.0" prefWidth="642.0" spacing="10.0" style="-fx-background-color: #0f172a; -fx-background-radius: 20;">
+                           <children>
+                              <Label fx:id="toggleB1" onMouseClicked="#showDeactivate" prefHeight="26.0" prefWidth="398.0" style="-fx-text-fill: DC143C;" text="Deactivate Account">
+                                 <font>
+                                    <Font name="Inter Medium" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <HBox fx:id="confirmWrapper">
+                                 <children>
+                                    <Label fx:id="resetErrorL2" prefHeight="34.0" prefWidth="126.0" style="-fx-text-fill: F3F2F7;" text="Are you sure?">
+                                       <font>
+                                          <Font name="Inter Medium" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#deactivate" prefHeight="32.0" prefWidth="71.0" style="-fx-background-radius: 10; -fx-background-color: F3F2F7; -fx-text-fill: #0f172a;" text="I'm sure">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Inter Medium" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </ScrollPane>
+         </right>
+      </BorderPane>
+   </center>
+</BorderPane>

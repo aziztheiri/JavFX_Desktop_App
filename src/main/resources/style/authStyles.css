@@ -1,0 +1,20 @@
+.textfields{
+   -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: black;
+    -fx-max-width: 300;
+    -fx-background-color: inherit;
+}
+.labels{
+    -fx-text-fill: FEB900;
+    -fx-font-weight: 700;
+    -fx-font-family: "Inter Semi Bold";
+}
+.buttons{
+    -fx-background-color: FEB900;
+    -fx-background-radius: 10;
+    -fx-text-fill: EFECEC;
+    -fx-cursor: hand;
+}
+.cap{
+    -fx-background-color: inherit;
+}

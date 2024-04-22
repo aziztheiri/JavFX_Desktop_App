@@ -1,0 +1,64 @@
+.bar-chart {
+    -fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+.pane-comparison{
+        -fx-background-color: white;
+        -fx-border-width: 3px;
+        -fx-border-radius: 25px;
+        -fx-background-radius: 25px;
+        -fx-border-color: rgb(128, 128, 128);
+}
+.chart-title {
+    -fx-background-color: transparent; /* Removes any background color */
+    -fx-background-image: none; /* Ensures there's no background image */
+    -fx-background-radius: 0; /* Removes any border radius */
+    -fx-background-insets: 0; /* Ensures the background does not extend into the title text */
+}
+.chart-plot-background {
+    -fx-background-color: white;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: transparent; /* Makes the grid lines invisible */
+}
+
+.bar-chart .chart-plot-background {
+    -fx-background-color: white;
+}
+
+.bar-chart .chart-series-line {
+    -fx-stroke: #d0d0d0;
+}
+
+.bar-chart .axis-label {
+    -fx-text-fill: #333;
+    -fx-font-size: 12px;
+}
+
+.bar-chart .axis-tick-label {
+    -fx-text-fill: #666;
+    -fx-font-size: 11px;
+}
+
+.bar-chart .default-color0.chart-bar {
+    -fx-bar-fill: #1e90ff; /* Blue */
+}
+
+.bar-chart .default-color1.chart-bar {
+    -fx-bar-fill: #228b22; /* ForestGreen */
+}
+
+.bar-chart .default-color2.chart-bar {
+    -fx-bar-fill: #ff4500; /* OrangeRed */
+}
+
+.bar-chart .default-color3.chart-bar {
+    -fx-bar-fill: #ff0000; /* Red */
+}
+
+.bar-chart .default-color4.chart-bar {
+    -fx-bar-fill: #0000ff; /* Blue */
+}

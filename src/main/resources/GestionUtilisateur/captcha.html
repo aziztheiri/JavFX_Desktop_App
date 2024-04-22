@@ -1,0 +1,18 @@
+    <html>
+    <head>
+        <title>reCAPTCHA demo: Simple page</title>
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+        <script defer>
+            function onRecaptchaResponse(response) {
+                if (typeof javaConnector !== 'undefined') {
+                    javaConnector.onRecaptchaCompleted(response);
+                } else {
+                    console.error('javaConnector is undefined');
+                }
+            }
+        </script>
+    </head>
+    <body style="background-color:  #EFECEC">
+        <div class="g-recaptcha" data-sitekey="6LfBeYgpAAAAACDD15dwtPxV6LOwvMXWbn3K7NWx" data-callback="onRecaptchaResponse"></div>
+    </body>
+    </html>

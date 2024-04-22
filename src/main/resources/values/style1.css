@@ -1,0 +1,12 @@
+/*////////////////////////////////////Reservation////////////////////*/
+.primary-color{
+    -fx-background-color: #0B5C2A;
+}
+.left-side-border{
+    -fx-border-color: #fff;
+    -fx-border-width: 0 0 0 5;
+}
+
+.selected-mail:hover{
+    -fx-background-color: #3E7E56;
+}

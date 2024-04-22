@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="446.0" prefWidth="324.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionMateriel.CodeController">
+   <children>
+      <ImageView fitHeight="134.0" fitWidth="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gestionMaterielImages/Confetti.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="28.0" layoutX="148.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gestionMaterielImages/heroicons_gift-20-solid.png" />
+         </image>
+      </ImageView>
+      <Text fill="#7d7878" layoutX="107.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surprise gift for you">
+         <font>
+            <Font name="Work Sans Medium" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="points" fill="#ee3572" layoutX="119.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200 Points" wrappingWidth="91.3650369644165">
+         <font>
+            <Font name="Work Sans ExtraBold" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="72.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gestionMaterielImages/Rectangle%202.png" />
+         </image>
+      </ImageView>
+      <Text fill="#7d7878" layoutX="136.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre Code">
+         <font>
+            <Font name="Work Sans Medium" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="code" layoutX="147.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Work Sans SemiBold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="56.0" layoutY="367.0" mnemonicParsing="false" onAction="#redeemClicked" prefHeight="42.0" prefWidth="232.0" style="-fx-background-color: EE3572; -fx-background-radius: 10;" text="Redeem Code" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="12.0" />
+         </font>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="18.0" fitWidth="27.0" layoutX="293.0" layoutY="14.0" onMouseClicked="#closeClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gestionMaterielImages/delete_14025328.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow height="18.66" radius="16.4325" width="49.07">
+         <color>
+            <Color opacity="0.5805470943450928" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>

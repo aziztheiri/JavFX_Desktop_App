@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="parentNode" minHeight="600.0" minWidth="800.0" prefHeight="775.0" prefWidth="1170.0" style="-fx-background-color: #EFECEC;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionUtilisateur.LoginController">
+   <right>
+      <VBox fx:id="formBox" alignment="CENTER" prefHeight="400.0" prefWidth="358.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="26.0" prefWidth="63.0" style="-fx-border-width: 0 0 2 0; -fx-border-color:#1781EB; -fx-alignment: center;" stylesheets="@../style/authStyles.css" text="Login">
+               <font>
+                  <Font name="Inter Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="244.0" text="C'est un plaisir de te voir à nouveau">
+               <font>
+                  <Font name="Inter Medium" size="13.0" />
+               </font>
+            </Label>
+            <VBox maxWidth="300.0" prefHeight="44.0" prefWidth="300.0">
+               <children>
+                  <Label styleClass="labels" stylesheets="@../style/authStyles.css" text="Username">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTF" promptText="Username" styleClass="textfields" stylesheets="@../style/authStyles.css">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox maxWidth="300.0" prefHeight="42.0" prefWidth="270.0">
+               <children>
+                  <Label styleClass="labels" stylesheets="@../style/authStyles.css" text="Password">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordTF" promptText="Password" styleClass="textfields" stylesheets="@../style/authStyles.css">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </VBox>
+            <CheckBox fx:id="remembermeCheck" mnemonicParsing="false" text="Remember me?">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></CheckBox>
+            <Label fx:id="errorL" alignment="CENTER" prefHeight="18.0" prefWidth="205.0" textFill="CRIMSON">
+               <font>
+                  <Font name="Inter Medium" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="activateB" mnemonicParsing="false" onAction="#routeToCodeValidation" prefHeight="26.0" prefWidth="188.0" style="-fx-background-color: inherit; -fx-text-fill: #1877f2;" styleClass="buttons" stylesheets="@../style/authStyles.css" text="Activate Account?">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Inter Medium" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="recover" mnemonicParsing="false" onAction="#routeToUsernameInput" prefHeight="26.0" prefWidth="188.0" style="-fx-background-color: inherit; -fx-text-fill: #1877f2;" styleClass="buttons" stylesheets="@../style/authStyles.css" text="Forgot your password?">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Inter Medium" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginB" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="178.0" styleClass="buttons" stylesheets="@../style/authStyles.css" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Inter Medium" size="12.0" />
+               </font></Button>
+            <HBox fx:id="googleLogin" alignment="CENTER" maxWidth="180.0" onMouseClicked="#googleLogin" prefHeight="30.0" prefWidth="180.0" spacing="10.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/google.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Login with google">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox alignment="CENTER" maxWidth="300.0" prefHeight="19.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="132.0" style="-fx-text-fill: #9AA0A0;" text="Dont have an account?">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font></Label>
+                  <Button fx:id="registerB" mnemonicParsing="false" onAction="#routeToRegister" prefHeight="23.0" prefWidth="82.0" style="-fx-background-color: inherit;" text="Create now">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </VBox>
+   </right>
+   <center>
+      <ImageView fx:id="iv" fitHeight="484.0" fitWidth="1006.0" pickOnBounds="true" preserveRatio="true" rotate="-75.0" translateX="-150.0" translateY="-50.0" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../images/login.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </center>
+</BorderPane>

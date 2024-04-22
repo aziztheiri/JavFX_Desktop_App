@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane minHeight="52.0" prefHeight="64.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionCour.TestReponseController">
+   <children>
+      <CheckBox fx:id="theReponse" allowIndeterminate="true" disable="true" indeterminate="true" layoutX="11.0" layoutY="18.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="443.0">
+         <font>
+            <Font name="Inter Medium" size="18.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="idReponse" layoutX="243.0" layoutY="10.0" opacity="0.0" visible="false" />
+      <Pane fx:id="TruePane" layoutX="570.0" layoutY="5.0" prefHeight="41.0" prefWidth="47.0" visible="false">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="8.0" layoutY="8.0">
+               <image>
+                  <Image url="@../gestionCourImages/check.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="FalsePane" layoutX="569.0" layoutY="5.0" prefHeight="41.0" prefWidth="47.0" visible="false">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="8.0" layoutY="8.0">
+               <image>
+                  <Image url="@../gestionCourImages/Wrong.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="UsersAnswer" layoutX="443.0" layoutY="19.0" prefHeight="20.0" prefWidth="116.0" text="Your Answer" textFill="#0f0d68" visible="false">
+         <font>
+            <Font name="Inter Medium" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionEvenement.carte">
+    <children>
+        <ImageView fx:id="image" fitHeight="185.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+
+        </ImageView>
+        <Separator orientation="VERTICAL" prefHeight="200.0" />
+        <VBox prefHeight="535.0" prefWidth="373.0">
+            <children>
+                <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Evenement Average Rate :" textAlignment="CENTER" wrappingWidth="231.44183349609375">
+                    <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                    </VBox.margin>
+                </Text>
+            <Label fx:id="avgLabel" contentDisplay="CENTER" prefHeight="37.0" prefWidth="71.0">
+               <VBox.margin>
+                  <Insets left="70.0" />
+               </VBox.margin>
+            </Label>
+                <Label prefHeight="42.0" prefWidth="86.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-padding: 0 0 5 0;" text="Nom Event : " />
+                <Label fx:id="nomLabel" />
+                <Label prefHeight="46.0" prefWidth="132.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-padding: 0 0 5 0;" text="Description Event : " />
+                <Label fx:id="descriptionLabel" HBox.hgrow="ALWAYS" />
+                <Label prefHeight="47.0" prefWidth="110.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-padding: 0 0 5 0;" text="Adresse Event : " />
+                <Label fx:id="adresseLabel" HBox.hgrow="ALWAYS" />
+                <Label prefHeight="62.0" prefWidth="102.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-padding: 0 0 5 0;" text="Date of Event : " />
+                <Label fx:id="dateLabel" />
+                <Rating fx:id="rating" layoutX="167.0" layoutY="98.0" prefHeight="30.0" prefWidth="176.0" />
+                <Label fx:id="msg" layoutX="178.0" layoutY="158.0" prefHeight="32.0" prefWidth="135.0">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Button layoutX="356.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="85.0" text="Submit" />
+            </children>
+        </VBox>
+    </children>
+
+
+</HBox>

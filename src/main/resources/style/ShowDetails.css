@@ -1,0 +1,43 @@
+
+.root {
+    -fx-font-size:  14px;
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+.header-section {
+    -fx-padding:  20px;
+    -fx-font-size:  24px;
+    -fx-font-weight: bold;
+    -fx-background-color: #007BFF;
+    -fx-text-fill: #ffffff;
+}
+
+.header-section Label {
+    -fx-text-fill: #ffffff;
+    -fx-padding:  10px;
+}
+.product-details {
+    -fx-padding:  20px;
+    -fx-font-size:  16px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+.product-comparison {
+    -fx-font-size:  10px;
+    -fx-font-weight: bold;
+}
+
+.product-details-Label {
+    -fx-font-weight: bold;
+    -fx-padding:  10px  0;
+}
+
+.text-area {
+    -fx-font-size:  14px;
+    -fx-text-fill: #333333;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width:  1px;
+    -fx-padding:  10px;
+}

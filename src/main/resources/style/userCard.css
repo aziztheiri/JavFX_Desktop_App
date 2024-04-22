@@ -1,0 +1,24 @@
+.textfields{
+   -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: black;
+    -fx-max-width: 300;
+    -fx-background-color: inherit;
+    -fx-text-fill:  F3F2F7;
+}
+.labels{
+    -fx-text-fill: FAF5FF;
+    -fx-font-weight: 600;
+
+}
+.buttons{
+    -fx-background-color: FAF5FF;
+    -fx-background-radius: 10;
+    -fx-text-fill:  #581C87;
+    -fx-cursor: hand;
+
+
+}
+.buttons:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

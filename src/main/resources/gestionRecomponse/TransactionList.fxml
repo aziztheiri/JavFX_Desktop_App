@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainContainer" prefHeight="775.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.gestionRecompense.TransactionListController">
+    <children>
+        <HBox layoutX="269.0" layoutY="52.0" prefHeight="106.0" prefWidth="804.0">
+            <children>
+                <Pane cacheShape="false" centerShape="false" prefHeight="106.0" prefWidth="180.0" scaleShape="false">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a4a4a" height="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 50; -fx-arc-height: 50;" width="180.0" />
+                        <Label layoutX="7.0" layoutY="14.0" prefHeight="21.0" prefWidth="152.0" text="Totale Transactions" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="99.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/transaction.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="nbrTransaction" layoutX="57.0" layoutY="42.0" text="n" textFill="WHITE">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="27.0" />
+                    </HBox.margin>
+                </Pane>
+                <Pane cacheShape="false" centerShape="false" prefHeight="106.0" prefWidth="180.0" scaleShape="false">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05aaff" height="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="180.0" />
+                        <Label layoutX="8.0" layoutY="14.0" text="Transactions dans ce jour" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="nbrIn24h" layoutX="57.0" layoutY="42.0" text="n" textFill="WHITE">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="104.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/24h.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="27.0" />
+                    </HBox.margin>
+                </Pane>
+                <Pane cacheShape="false" centerShape="false" prefHeight="106.0" prefWidth="180.0" scaleShape="false">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e7d7d" height="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="180.0" />
+                        <Label layoutX="9.0" layoutY="11.0" text="Factures de la Semaine" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="nbrIn7j" layoutX="57.0" layoutY="42.0" text="n" textFill="WHITE">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="99.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/7-days.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="27.0" />
+                    </HBox.margin>
+                </Pane>
+                <Pane cacheShape="false" centerShape="false" prefHeight="106.0" prefWidth="180.0" scaleShape="false">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#55e028" height="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="180.0" />
+                        <Label layoutX="13.0" layoutY="11.0" text="Factures dans ce Mois" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="nbrIn30j" layoutX="57.0" layoutY="42.0" text="n" textFill="WHITE">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="99.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/planning.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Pane>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </HBox>
+        <Label layoutX="269.0" layoutY="1.0" prefHeight="58.0" prefWidth="200.0" text="Vue d'ensemble" textFill="#5e5d5d">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Pane layoutX="260.0" layoutY="220.0" prefHeight="50.0" prefWidth="800.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="800.0">
+                    <stroke>
+                        <LinearGradient endX="0.780303059202252" endY="1.0" startX="0.15530303572163437" startY="0.03787878787878788">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.5208613728129204">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </stroke>
+                </Rectangle>
+                <HBox prefHeight="50.0" prefWidth="800.0">
+                    <children>
+                        <Label prefHeight="70.0" prefWidth="90.0" textAlignment="CENTER">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="176.0" text="Date Transaction">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="150.0" text="Points">
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="153.0" text="Sens Transaction">
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="228.0" text="Client">
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+        <ScrollPane layoutX="260.0" layoutY="280.0" prefHeight="468.0" prefWidth="833.0" style="-fx-background-color: transparent;">
+            <content>
+                <VBox fx:id="vbox" prefHeight="416.0" prefWidth="814.0" style="-fx-background-color: transparent;" />
+            </content></ScrollPane>
+        <Pane layoutX="413.0" layoutY="164.0" prefHeight="50.0" prefWidth="525.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: white;">
+            <children>
+                <DatePicker fx:id="startDate" layoutX="57.0" layoutY="8.0" onAction="#setStarDate" prefHeight="31.0" prefWidth="175.0" />
+                <Label layoutX="241.0" layoutY="13.0" prefHeight="17.0" prefWidth="0.0" text="a">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="8.0" layoutY="12.0" text="depuis ">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <DatePicker fx:id="endDate" layoutX="258.0" layoutY="8.0" onAction="#setEndDate" prefHeight="31.0" prefWidth="175.0" />
+                <Button layoutX="460.0" layoutY="10.0" mnemonicParsing="false" onAction="#filterClear" prefHeight="25.0" prefWidth="28.0" text="✖" />
+            </children>
+        </Pane>
+        <Label layoutX="275.0" layoutY="159.0" prefHeight="58.0" prefWidth="149.0" text="Filter avec date" textFill="#5e5d5d">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+      <AnchorPane layoutX="-8.0" prefHeight="762.0" prefWidth="229.0" style="-fx-background-color: white;">
+         <children>
+            <Line endX="195.7999725341797" layoutX="45.0" layoutY="206.0" startX="-100.0" />
+            <ImageView fitHeight="165.0" fitWidth="210.0" layoutX="28.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/426836758_7144857225621536_8049451163237829221_n.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username" layoutX="70.0" layoutY="166.0" text="Bienvenue Admin">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-7.0" layoutY="223.0" prefHeight="560.0" prefWidth="254.0">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="77.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Online%20Shop.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="23.0" layoutX="80.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/calendar_9452276.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="77.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Product.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="77.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Basket.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="77.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Test%20Passed.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="43.0" layoutY="530.0" onMouseClicked="#disconnect" strokeType="OUTSIDE" strokeWidth="0.0" text="Déconnecter">
+                     <font>
+                        <Font name="Inter Medium" size="12.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="18.0" fitWidth="12.0" layoutX="28.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Move%20Up.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="78.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Performance%20Macbook.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="29.0" layoutX="78.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/Users.png" />
+                     </image>
+                  </ImageView>
+                  <Circle centerX="46.5" centerY="-1.0" fill="#a6a4a4" layoutX="46.0" layoutY="329.0" radius="1.0" rotate="270.0" scaleX="1.5" scaleY="10.0" scaleZ="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <rotationAxis>
+                        <Point3D z="3.0" />
+                     </rotationAxis>
+                  </Circle>
+                  <Button layoutX="107.0" layoutY="25.0" mnemonicParsing="false" onAction="#naviguerVersDashboard" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Dashboard" textFill="#1d364d">
+                     <font>
+                        <Font name="Inter SemiBold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="107.0" layoutY="94.0" mnemonicParsing="false" onAction="#materielBackClicked" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Matériels" textFill="#1d364d">
+                     <font>
+                        <Font name="Inter SemiBold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="105.0" layoutY="167.0" mnemonicParsing="false" onAction="#naviguerVersProduitsBack" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Produits Finis" textFill="#1d364d">
+                     <font>
+                        <Font name="Inter SemiBold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="105.0" layoutY="230.0" mnemonicParsing="false" onAction="#CoursClicked" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Quiz" textFill="#1d364d">
+                     <font>
+                        <Font name="Inter SemiBold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="104.0" layoutY="303.0" mnemonicParsing="false" onAction="#naviguerVersEventBack" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Evènements" textFill="#1d364d">
+                     <font>
+                        <Font name="Inter SemiBold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="105.0" layoutY="378.0" mnemonicParsing="false" onAction="#naviguerVersBoutique" style="-fx-text-fill: #fab300;" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Boutique" textFill="#fab300">
+                     <font>
+                        <Font name="Inter SemiBold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="103.0" layoutY="449.0" mnemonicParsing="false" onAction="#naviguerVersUsers" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Utilisateurs" textFill="#1d364d">
+                     <font>
+                        <Font name="Inter SemiBold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

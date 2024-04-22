@@ -1,0 +1,81 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+#username{
+    -fx-font-family: "Inter", sans-serif;
+*/
+.test{
+    -fx-background-color: none;
+
+}
+
+
+.errorLabel{
+    -fx-font-family: "Poppins Medium";
+}
+.test:hover{
+    -fx-text-fill: #feb900;
+
+}
+
+.enterCodeText{
+    -fx-font-family: Inter;
+}
+
+.confirmCodeButton:hover
+{
+    -fx-padding: 0 0 2 0;
+    /*-fx-translate-y: -5;*/
+
+}
+.confirmCodeButton:pressed {
+    -fx-padding: 5 0 0 0;
+}
+
+.buttonRembourser:hover
+{
+    -fx-background-color: #0170e6 !important;
+    -fx-text-fill: white;
+}
+.buttonRembourser
+{
+
+    -fx-text-fill: #0170e6 ;
+}
+.buttonRembourser:pressed
+{
+    -fx-padding: 5 0 0 0;
+}
+
+.reserverButton {
+    -fx-padding: 1.3em 3em;
+    -fx-font-size: 12px;
+    -fx-text-fill: #000;
+    -fx-background-color: #fff;
+    -fx-border-color: transparent;
+    -fx-border-radius: 45px;
+    -fx-background-radius: 45px;
+    -fx-font-weight: 500;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 3);
+    -fx-transition: all 0.3s ease;
+    -fx-cursor: hand;
+    -fx-focus-traversable: false;
+    -fx-font-family: "Poppins Medium";
+
+}
+
+.reserverButton:hover {
+    -fx-background-color: #23c483;
+    -fx-effect: dropshadow(gaussian, rgba(46, 229, 157, 0.4), 8, 0, 0, 5);
+    -fx-text-fill: #fff;
+    -fx-translate-y: -7px;
+    -fx-font-size: 12px;
+    -fx-font-family: "Poppins Medium";
+
+}
+
+.reserverButton:pressed {
+    -fx-translate-y: -1px;
+}
+
+
+

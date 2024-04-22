@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="775.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.gestionRecompense.BoutiqueController">
+    <children>
+
+        <AnchorPane fx:id="navbarHolder" layoutX="-8.0" prefHeight="762.0" prefWidth="229.0" style="-fx-background-color: white;">
+            <children>
+                <Line endX="195.7999725341797" layoutX="45.0" layoutY="256.0" startX="-100.0" stroke="LIGHTGRAY" />
+                <ImageView fitHeight="94.0" fitWidth="114.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Icons/426836758_7144857225621536_8049451163237829221_n.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="userPhoto" fitHeight="95.0" fitWidth="100.0" layoutX="62.0" layoutY="94.0" onMouseClicked="#routeToProfile" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Icons/Ellipse%201.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="username" layoutX="69.0" layoutY="202.0" text="Nom et Prénom">
+                    <font>
+                        <Font name="SansSerif Bold" size="12.0" />
+                    </font></Label>
+                <ImageView fitHeight="16.0" fitWidth="19.0" layoutX="117.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Icons/pngtree-gold-golden-coin-coin-reward-png-image_3972693-removebg-preview 1.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="-15.0" layoutY="254.0" prefHeight="516.0" prefWidth="254.0">
+                    <children>
+                        <ImageView fx:id="remoboursementIcon" fitHeight="50.0" fitWidth="49.0" layoutX="70.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/Ticket.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="boutiqueIcon" fitHeight="53.0" fitWidth="49.0" layoutX="68.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/Small Business.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="coursIcon" fitHeight="71.0" fitWidth="65.0" layoutX="60.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/Classroom.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="produitFiniIcon" fitHeight="47.0" fitWidth="49.0" layoutX="68.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/Man Red Shopping Basket.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="materielIcon" fitHeight="47.0" fitWidth="49.0" layoutX="71.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/3D Printer.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="eventIcon" fitHeight="57.0" fitWidth="49.0" layoutX="68.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/Today.png" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="75.0" layoutY="489.0" onMouseClicked="#disconnect" strokeType="OUTSIDE" strokeWidth="0.0" text="Déconnecter">
+                            <font>
+                                <Font name="Inter Medium" size="12.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="18.0" fitWidth="12.0" layoutX="59.0" layoutY="478.0" onMouseClicked="#disconnect" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icons/Move Up.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="materielText" layoutX="113.0" layoutY="37.0" mnemonicParsing="false" onAction="#routeToMateriel" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Matériels" textFill="#1d364d">
+                            <font>
+                                <Font name="Inter SemiBold" size="13.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="coursText" layoutX="117.0" layoutY="180.0" mnemonicParsing="false" onAction="#coursClicked" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Quiz" textFill="#1d364d">
+                            <font>
+                                <Font name="Inter SemiBold" size="13.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="eventText" layoutX="119.0" layoutY="261.0" mnemonicParsing="false" onAction="#eventClicked" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Evenement" textFill="#1d364d">
+                            <font>
+                                <Font name="Inter SemiBold" size="13.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="boutiqueText" layoutX="120.0" layoutY="342.0" mnemonicParsing="false" style="-fx-text-fill: #feb900;" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Boutique" textFill="#1d364d">
+                            <font>
+                                <Font name="Inter SemiBold" size="13.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="remoboursementText" layoutX="119.0" layoutY="424.0" mnemonicParsing="false" onAction="#remboursementClicked" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Code" textFill="#1d364d">
+                            <font>
+                                <Font name="Inter SemiBold" size="13.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="produitFiniText" layoutX="115.0" layoutY="101.0" mnemonicParsing="false" onAction="#produitFiniClicked" styleClass="test" stylesheets="@../style/navbarStyle.css" text="Produits Finis" textFill="#1d364d">
+                            <font>
+                                <Font name="Inter SemiBold" size="13.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+      <Pane layoutX="252.0" layoutY="16.0" prefHeight="146.0" prefWidth="824.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="150.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="636.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.20000000298023224" green="0.0941176488995552" blue="0.41960784792900085" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.20000000298023224" green="0.0941176488995552" blue="0.41960784792900085" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.3365853658536585">
+                           <color>
+                              <Color red="0.45098039507865906" green="0.3764705955982208" blue="0.8745098114013672" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6926829268292682">
+                           <color>
+                              <Color red="0.7686274647712708" green="0.6000000238418579" blue="0.9529411792755127" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9490196108818054" green="0.686274528503418" blue="0.9372549057006836" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Rectangle>
+            <Label layoutX="17.0" layoutY="-23.0" prefHeight="95.0" prefWidth="392.0" text="Marchandise la plus populaire" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="mostImg" fitHeight="100.0" fitWidth="100.0" layoutX="23.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="mostLebelle" layoutX="130.0" layoutY="48.0" prefHeight="45.0" prefWidth="330.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Pane layoutX="645.0" onMouseClicked="#goToPointStore" prefHeight="150.0" prefWidth="82.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="82.0">
+                     <fill>
+                        <LinearGradient startY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9490196108818054" green="0.686274528503418" blue="0.9372549057006836" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006729475100942127">
+                                 <color>
+                                    <Color red="0.9490196108818054" green="0.686274528503418" blue="0.9372549057006836" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.1300988083905064">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.48235294222831726" blue="0.8980392217636108" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.6380658503758658">
+                                 <color>
+                                    <Color red="0.5921568870544434" green="0.30588236451148987" blue="0.7647058963775635" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9973082099596231">
+                                 <color>
+                                    <Color red="0.3137255012989044" green="0.250980406999588" blue="0.6000000238418579" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.3137255012989044" green="0.250980406999588" blue="0.6000000238418579" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Rectangle>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="11.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/basketAymen.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="735.0" onMouseClicked="#openGame" prefHeight="150.0" prefWidth="82.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="82.0">
+                     <fill>
+                        <LinearGradient endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9490196108818054" green="0.686274528503418" blue="0.9372549057006836" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006729475100942127">
+                                 <color>
+                                    <Color red="0.9490196108818054" green="0.686274528503418" blue="0.9372549057006836" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.2619965203689721">
+                                 <color>
+                                    <Color red="0.7625333070755005" green="0.5985000133514404" blue="0.949999988079071" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.6380658503758658">
+                                 <color>
+                                    <Color red="0.45098039507865906" green="0.3764705955982208" blue="0.8745098114013672" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.20000000298023224" green="0.0941176488995552" blue="0.41960784792900085" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Rectangle>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="11.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/console.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+         </children></Pane>
+      <ScrollPane layoutX="240.0" layoutY="257.0" prefHeight="505.0" prefWidth="852.0" style="-fx-background-color: transparent;">
+         <content>
+            <GridPane fx:id="marchandiseGrid" prefHeight="34.0" prefWidth="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="259.0" layoutY="175.0" prefHeight="75.0" prefWidth="818.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="819.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.20000000298023224" green="0.0941176488995552" blue="0.41960784792900085" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.386271870794078">
+                           <color>
+                              <Color red="0.4477599859237671" green="0.38280001282691956" blue="0.8700000047683716" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7577388963660833">
+                           <color>
+                              <Color red="0.7686274647712708" green="0.6000000238418579" blue="0.9529411792755127" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9946164199192462">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9490196108818054" green="0.686274528503418" blue="0.9372549057006836" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" layoutX="26.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="442.0" />
+            <TextField fx:id="tfResearch" layoutX="36.0" layoutY="12.0" onKeyReleased="#onResearch" prefHeight="47.0" prefWidth="379.0" style="-fx-background-color: transparent; -fx-border-radius: 30;">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="417.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/loupe.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="triBox" layoutX="583.0" layoutY="15.0" onAction="#onTri" prefHeight="40.0" prefWidth="199.0" style="-fx-background-color: #B5C0D0; -fx-background-radius: 30;" />
+            <Label layoutX="486.0" layoutY="23.0" text="Trier par :">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="42.0" fitWidth="51.0" layoutX="178.0" layoutY="212.0" onMouseClicked="#homeClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/Home%20Page.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="points" layoutX="32.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="74.39999999999998" />
+
+    </children>
+
+
+
+</AnchorPane>

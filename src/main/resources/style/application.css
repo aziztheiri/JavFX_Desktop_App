@@ -1,0 +1,93 @@
+.addAnchor{
+    -fx-background-color: white;
+    -fx-border-color: rgb(229, 228, 226);
+    -fx-border-width: 2px;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+.img-mois{
+    -fx-border-radius: 25px;
+    -fx-border-width: 3px;
+    -fx-border-color: black;
+
+}
+.mois-pane{
+    -fx-background-image: url(/Icons/mois.png);
+    -fx-background-size: cover;
+    -fx-border-color: #1781EB;
+    -fx-border-width: 3px;
+}
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.welcome{
+    -fx-font-size: 25px;
+    -fx-font-family: "Inter Semi Bold";
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px;
+    -fx-border-width: 3px;
+    -fx-border-color: #1781EB;
+    -fx-border-radius: 5px;
+}
+.compare-produit{
+    -fx-font-size: 20px;
+    -fx-font-family: "Inter Semi Bold";
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 5px;
+    -fx-border-width: 2px;
+    -fx-border-color: #feb900;
+    -fx-border-radius: 5px;
+}
+.artiste-mois{
+    -fx-font-size: 40px;
+    -fx-font-family: "Inter Semi Bold";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 8px;
+}
+.label-artist {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+
+}
+.image_button {
+    -fx-background-color: #feb900;
+    -fx-background-radius: 10;
+    -fx-text-fill: black;
+}
+
+.textfields , text-area ,combo-box{
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: black;
+    -fx-max-width: 300;
+    -fx-background-color: inherit;
+}
+.labels{
+    -fx-text-fill: FEB900;
+    -fx-font-weight: 700;
+    -fx-font-family: "Inter Semi Bold";
+}
+.labelsdonation{
+    -fx-text-fill: black;
+    -fx-font-weight: 700;
+    -fx-font-family: "Inter Semi Bold";
+}
+.buttons{
+    -fx-background-color: #1781EB;
+    -fx-background-radius: 10;
+    -fx-text-fill: EFECEC;
+    -fx-prompt-text-fill:FFFFFF ;
+}
+.comboxes{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-text-fill: EFECEC;
+}
+
+
+

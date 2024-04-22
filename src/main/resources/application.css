@@ -1,0 +1,67 @@
+.addAnchor{
+    -fx-background-color: white;
+    -fx-border-color: rgb(229, 228, 226);
+    -fx-border-width: 2px;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.google.button{
+    -fx-background-color: rgb(229, 228, 226);
+    -fx-font-family: "Arial";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+;
+}
+.google.button:hover{
+    -fx-font-family: "Arial";
+    -fx-font-size: 15px;
+    -fx-text-fill: #feb900;
+}
+.welcome{
+    -fx-font-size: 25px;
+    -fx-font-family: "Inter Semi Bold";
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px;
+    -fx-border-width: 3px;
+    -fx-border-color: #1781EB;
+    -fx-border-radius: 5px;
+}
+.image_button {
+    -fx-background-color: #feb900;
+    -fx-background-radius: 10;
+    -fx-text-fill: black;
+}
+
+.textfields , text-area ,combo-box{
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: black;
+    -fx-max-width: 300;
+    -fx-background-color: inherit;
+}
+.labels{
+    -fx-text-fill: FEB900;
+    -fx-font-weight: 700;
+    -fx-font-family: "Inter Semi Bold";
+}
+.buttons{
+    -fx-background-color: #1781EB;
+    -fx-background-radius: 10;
+    -fx-text-fill: EFECEC;
+}
+.comboxes{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-text-fill: EFECEC;
+}
+
+
+

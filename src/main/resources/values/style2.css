@@ -1,0 +1,18 @@
+.label-text
+{
+    -fx-background-color : transparante;
+    -fx-border-color :  #444444 ;
+    -fx-border-width :  0px 0px 2px 0px;
+    -fx-border-radius: 8px;
+}
+
+.size
+{
+    -fx-pref-width: 270;
+    -fx-pref-height: 30;
+}
+.label-size
+{
+    -fx-pref-width: 270;
+    -fx-pref-height: 10;
+}

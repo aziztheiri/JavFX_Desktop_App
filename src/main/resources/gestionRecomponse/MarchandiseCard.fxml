@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#goToMarchandiseDtail" prefHeight="240.0" prefWidth="186.0" style="-fx-background-radius: 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.gestionRecompense.MarchandiseCardController">
+   <children>
+      <Rectangle fx:id="rec" arcHeight="5.0" arcWidth="5.0" height="240.0" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="186.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.29019609093666077" green="0.29019609093666077" blue="0.29019609093666077" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.32680300692643527">
+                     <color>
+                        <Color red="1.0" green="0.2235294133424759" blue="0.3686274588108063" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6508026130059414">
+                     <color>
+                        <Color red="0.43529412150382996" green="0.43529412150382996" blue="0.43529412150382996" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.6470588445663452" blue="0.9254902005195618" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45490196347236633" blue="0.7215686440467834" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.11252338902931423">
+                     <color>
+                        <Color red="0.4117647111415863" green="0.1882352977991104" blue="0.7647058963775635" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2221022223681187">
+                     <color>
+                        <Color red="0.3686274588108063" green="0.3764705955982208" blue="0.8078431487083435" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3317696878180087">
+                     <color>
+                        <Color red="0.32549020648002625" green="0.5647059082984924" blue="0.8509804010391235" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44000919147818657">
+                     <color>
+                        <Color red="0.30588236451148987" green="0.658823549747467" blue="0.8705882430076599" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5529626103798049">
+                     <color>
+                        <Color red="0.2823529541492462" green="0.7490196228027344" blue="0.8901960849761963" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6613793782621538">
+                     <color>
+                        <Color red="0.33725491166114807" green="0.8117647171020508" blue="0.8823529481887817" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7724879361848801">
+                     <color>
+                        <Color red="0.3921568691730499" green="0.8745098114013672" blue="0.8745098114013672" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8766208186980927">
+                     <color>
+                        <Color red="0.4470588266849518" green="0.9372549057006836" blue="0.8666666746139526" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.501960813999176" green="1.0" blue="0.8588235378265381" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0">
+               <color>
+                  <Color opacity="0.17629174888134003" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <VBox prefHeight="242.0" prefWidth="186.0">
+         <children>
+            <Pane prefHeight="166.0" prefWidth="178.0">
+               <children>
+                  <ImageView fx:id="imgMerch" fitHeight="137.0" fitWidth="153.0" layoutX="17.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imgLimited" fitHeight="23.0" fitWidth="19.0" layoutX="164.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/limited-edition.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="66.0" prefWidth="186.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff9c" height="66.0" layoutX="5.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="175.0" />
+                  <Label fx:id="Tlibelle" layoutX="10.0" layoutY="11.0" prefHeight="24.0" prefWidth="96.0" text="libelle ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Tprix" layoutX="117.0" layoutY="5.0" prefHeight="36.0" prefWidth="64.0" text="prix" textAlignment="RIGHT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="Tdisponibilite" layoutX="56.0" layoutY="35.0" prefHeight="26.0" prefWidth="83.0" text="disponibilite" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="154.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.gestionRecompense.PointPackCardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="155.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="666.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" blue="0.27843138575553894" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3657256343761284">
+                     <color>
+                        <Color red="0.7019608020782471" blue="0.3686274588108063" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6432852969175722">
+                     <color>
+                        <Color red="0.9137254953384399" blue="0.3921568691730499" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.37254902720451355" blue="0.6196078658103943" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Label fx:id="lpoints" layoutX="11.0" prefHeight="155.0" prefWidth="130.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lDescription" layoutX="159.0" prefHeight="155.0" prefWidth="275.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="99.0" layoutX="448.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="207.0" />
+      <Text layoutX="585.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label fx:id="lprix" alignment="CENTER_RIGHT" layoutX="450.0" layoutY="56.0" prefHeight="47.0" prefWidth="66.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="517.0" layoutY="56.0" prefHeight="47.0" prefWidth="30.0" text="DT">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Pane fx:id="acheter" layoutX="560.0" layoutY="50.0" prefHeight="54.0" prefWidth="90.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="54.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="90.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0235294122248888" blue="0.27843138575553894" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.34146341463414637">
+                           <color>
+                              <Color red="0.7019608020782471" blue="0.3686274588108063" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6292682926829267">
+                           <color>
+                              <Color red="0.9137254953384399" blue="0.3921568691730499" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.37254902720451355" blue="0.6196078658103943" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="3.0" layoutY="10.0" prefHeight="36.0" prefWidth="84.0" text="acheter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</AnchorPane>

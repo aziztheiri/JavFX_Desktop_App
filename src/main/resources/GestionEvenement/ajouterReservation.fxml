@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionEvenement.ajouterReservation">
+   <left>
+      <VBox prefHeight="835.0" prefWidth="204.0" spacing="20.0" styleClass="primary-color" stylesheets="@values/style1.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="41.0" prefWidth="130.0" text="Inbox-Gmail" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Menu_icon.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="TOP_CENTER" prefHeight="279.0" prefWidth="204.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="204.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/ic-plus-o.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="110.0" stylesheets="@values/style.css" text="New mail" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="22.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="204.0" spacing="10.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/perr.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="110.0" stylesheets="@values/style.css" text="Accounts" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox prefHeight="80.0" prefWidth="204.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="74.0" prefWidth="204.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="29.0" prefWidth="86.0" stylesheets="@values/style.css" text="Gmail" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Pane prefHeight="58.0" prefWidth="30.0" />
+                              <Label alignment="CENTER" prefHeight="22.0" prefWidth="77.0" text="411" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" prefHeight="22.0" prefWidth="193.0" text="MyEmail.gmail.com" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="left-side-border" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="204.0" spacing="10.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/messg.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="120.0" stylesheets="@values/style.css" text="Folders" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="178.0" prefWidth="204.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="204.0" stylesheets="@values/style1.css">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="57.0" stylesheets="@values/style.css" text=" Inbox" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="37.0" prefWidth="84.0" />
+                        <Label prefHeight="26.0" prefWidth="57.0" text="411" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="left-side-border" />
+                        <String fx:value="selected-mail" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="204.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="57.0" stylesheets="@values/style.css" text="Drafts" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="37.0" prefWidth="84.0" />
+                        <Label prefHeight="26.0" prefWidth="57.0" text="    1" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="204.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="79.0" stylesheets="@values/style.css" text="Sent mail" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="37.0" prefWidth="84.0" />
+                        <Label prefHeight="26.0" prefWidth="57.0" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="204.0" spacing="10.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="57.0" text="More" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="37.0" prefWidth="84.0" />
+                        <Label prefHeight="26.0" prefWidth="57.0" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="66.0" prefWidth="204.0" styleClass="selected-mail" stylesheets="@values/style1.css">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/phone.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="54.0" prefWidth="170.0" text="get gmail on your phone" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="158.0" layoutY="97.0" prefHeight="36.0" prefWidth="363.0" text=" Your Reservation" textFill="#4e3131">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="26.0" />
+               </font>
+            </Label>
+
+            <ScrollPane layoutX="2.0" layoutY="201.0" prefHeight="325.0" prefWidth="688.0">
+               <content>
+                  <HBox fx:id="carteRv" prefHeight="290.0" prefWidth="711.0" />
+               </content>
+            </ScrollPane>
+
+            <Button fx:id="btn4" layoutX="139.0" layoutY="586.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #FF5056;" text="Ajouter Reservation" textFill="#fafafa" />
+            <Button fx:id="btn5" layoutX="284.0" layoutY="585.0" mnemonicParsing="false" onAction="#delete" prefHeight="28.0" prefWidth="139.0" style="-fx-background-color: #FF5056;" text="Supprimer Reservation" textFill="WHITE" />
+            <Button fx:id="btn6" layoutX="450.0" layoutY="586.0" mnemonicParsing="false" onAction="#update" text="Modifier Reservation" />
+
+
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
+-->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionEvenement.ajouterReservation">
+   <top>
+      <HBox prefHeight="44.0" prefWidth="1170.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="50.0" prefWidth="198.0" text="My Event" textFill="RED">
+               <font>
+                  <Font name="Edwardian Script ITC" size="35.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="text" promptText="search" />
+               </children>
+            </HBox>
+            <Button fx:id="generateExcel" mnemonicParsing="false" onAction="#generateExcel" prefHeight="39.0" prefWidth="157.0" text="Exporter Excel">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="14.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <VBox prefHeight="612.0" prefWidth="524.0">
+               <ScrollPane prefHeight="554.0" prefWidth="518.0" BorderPane.alignment="CENTER">
+                  <BorderPane.margin>
+                     <Insets bottom="200.0" />
+                  </BorderPane.margin>
+                  <content>
+                     <HBox fx:id="carteRv" prefHeight="535.0" prefWidth="610.0" />
+                  </content>
+               </ScrollPane>
+               <HBox alignment="CENTER" spacing="10">
+                  <Button fx:id="btn4" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Ajouter Reservation" textFill="#c91c1c" />
+                  <Button fx:id="btn5" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #FF5733; -fx-text-fill: white;" text="Supprimer Reservation" textFill="#bc1e1e" />
+                  <Button fx:id="btn6" mnemonicParsing="false" onAction="#update" style="-fx-text-fill: black;" text="Update Reservation" textFill="#ee2222" />
+               </HBox>
+               <Button fx:id="button2" mnemonicParsing="false" onAction="#button2" prefHeight="30.0" prefWidth="139.0" styleClass="primary-color" stylesheets="@../values/style1.css" text="check Event" textFill="WHITE" />
+
+            </VBox>
+
+         </center>
+
+      </BorderPane>
+   </center>
+
+</BorderPane>

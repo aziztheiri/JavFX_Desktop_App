@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="471.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionEvenement.statistique">
+   <children>
+      <Label layoutX="110.0" layoutY="31.0" prefHeight="47.0" prefWidth="537.0" text="Pourcentage Reservation Evenement &quot;Evenements CONFIRME&quot;" textFill="#d71111" underline="true">
+         <font>
+            <Font name="Corbel Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutY="79.0" prefHeight="396.0" prefWidth="689.0" />
+      <Button fx:id="retourstat" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#retourstat" prefHeight="34.0" prefWidth="67.0" text="Retour" />
+   </children>
+</AnchorPane>

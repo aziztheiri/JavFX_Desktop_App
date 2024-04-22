@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.arteco.controllers.GestionCour.AddQuestionController">
+   <children>
+      <TextField fx:id="Question" layoutX="99.0" layoutY="10.0" prefHeight="49.0" prefWidth="400.0">
+         <font>
+            <Font name="Inter Medium" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="11.0" layoutY="20.0" text="Question" textFill="#545353">
+         <font>
+            <Font name="Inter Medium" size="18.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="ReponseGrid" layoutX="-1.0" layoutY="34.0" prefHeight="65.0" prefWidth="698.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="700.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button fx:id="AddReponse" layoutX="561.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#onAddReponseClicked" prefHeight="36.0" prefWidth="143.0" style="-fx-background-radius: 20; -fx-background-color: #323232;" text="+Reponse" textFill="#f8f8f8">
+         <font>
+            <Font name="Inter Medium" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="Alert" layoutX="563.0" layoutY="61.0" text="Fill Question Data First" textFill="#ff0202" visible="false">
+         <font>
+            <Font name="Inter Medium" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
