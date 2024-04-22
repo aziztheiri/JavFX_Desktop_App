@@ -324,40 +324,6 @@ UserService userService = new UserService();
         return nbrProduitsParCategorie;
     }
 
-    public void smsSend() {
-        final String ACCOUNT_SID = "AC5cf40d010a86d960d5d39c1ffb96a9cb";
-        final String AUTH_TOKEN = "253a1d2f1bd12d979fa4fb48089b58e4";
-        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
-        com.twilio.rest.api.v2010.account.Message message = com.twilio.rest.api.v2010.account.Message.creator(
-                        new PhoneNumber("+21694003834"),
-                        new PhoneNumber("+12296580078"),
-                        "Hello sir this is your verification SMS  ")
-                .create();
-
-        System.out.println("Message sent: " + message.getSid());
-    }
-
-    public  void createQR(String data, String path,
-                                  String charset,
-                                int height, int width)
-            throws WriterException, IOException {
-
-        BitMatrix matrix = new MultiFormatWriter().encode(
-                new String(data.getBytes(charset), charset),
-                BarcodeFormat.QR_CODE, width, height);
-
-        MatrixToImageWriter.writeToFile(
-                matrix,
-                path.substring(path.lastIndexOf('.') + 1),
-                new File(path));
-
-        Map<EncodeHintType, ErrorCorrectionLevel> hashMap
-                = new HashMap<EncodeHintType,
-                ErrorCorrectionLevel>();
-
-        hashMap.put(EncodeHintType.ERROR_CORRECTION,
-                ErrorCorrectionLevel.L);
-    }
+   
 
 }

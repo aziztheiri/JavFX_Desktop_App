@@ -25,7 +25,7 @@ public class JavaConnector {
     }
     public void onRecaptchaCompleted(String response) {
         String responseToken = response;
-        String secretKey = "6LfBeYgpAAAAAMmdHRjPo5JAiTe4fi_OzCcNPiFz";
+        String secretKey = "";
         setCaptchaVerified(verifyRecaptcha(responseToken, secretKey));
 
     }
